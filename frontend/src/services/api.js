@@ -23,6 +23,34 @@ const request = async (endpoint, options = {}) => {
   return data;
 };
 
+// FAKE STORE PRODUCTS
+// ==========================
+
+export const getProducts = async () => {
+  try {
+    console.log("Fetching Fake Store products...");
+
+    const response = await fetch(
+      "https://fakestoreapi.com/products"
+    );
+
+    console.log("Response status:", response.status);
+
+    if (!response.ok) {
+      throw new Error("Failed to fetch products");
+    }
+
+    const data = await response.json();
+
+    console.log("Products received:", data);
+
+    return data;
+  } catch (error) {
+    console.error("Fake Store API error:", error);
+    throw error;
+  }
+};
+
 // AUTH
 
 export const registerUser = (userData) =>

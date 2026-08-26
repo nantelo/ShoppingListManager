@@ -10,6 +10,7 @@ import {
   getLists,
   getHistory,
 } from "../services/api";
+import AddItem from "./AddItem";
 
 const Dashboard = () => {
   const user = JSON.parse(localStorage.getItem("user") || "null");
@@ -76,7 +77,7 @@ const Dashboard = () => {
           <div className="stat-card">
             <div className="stat-card-header">
               <div>
-                <span className="stat-label">Grocery lists</span>
+                <span className="stat-label">Product lists</span>
                 <h3>{lists.length}</h3>
               </div>
 
@@ -111,7 +112,7 @@ const Dashboard = () => {
 
         <div className="section-header">
           <div>
-            <h2>Your grocery lists</h2>
+            <h2>Your product lists</h2>
             <p>Recently created shopping lists</p>
           </div>
 
@@ -121,7 +122,7 @@ const Dashboard = () => {
         {lists.length === 0 ? (
           <EmptyState
             icon="🛒"
-            title="No grocery lists yet"
+            title="No product lists yet"
             description="Create your first list and start planning your shopping."
             buttonText="Create your first list"
             buttonLink="/lists/create"
@@ -137,7 +138,9 @@ const Dashboard = () => {
             ))}
           </div>
         )}
+       
       </main>
+       
     </>
   );
 };

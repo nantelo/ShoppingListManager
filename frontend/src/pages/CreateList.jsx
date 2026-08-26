@@ -41,7 +41,7 @@ const CreateList = () => {
         <div className="page-heading">
           <div>
             <div className="eyebrow">NEW LIST</div>
-            <h1>Create a grocery list</h1>
+            <h1>Create a product list</h1>
             <p>Plan what you need before your next shopping trip.</p>
           </div>
         </div>
@@ -63,7 +63,7 @@ const CreateList = () => {
 
               <input
                 type="text"
-                placeholder="e.g. Weekly groceries"
+                placeholder="e.g. Weekly product shopping"
                 value={form.name}
                 onChange={(e) =>
                   setForm({

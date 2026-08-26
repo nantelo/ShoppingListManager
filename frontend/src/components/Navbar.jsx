@@ -17,12 +17,12 @@ const Navbar = () => {
     <header className="navbar">
       <Link to="/" className="logo">
         <span>🛒</span>
-        GroceryFlow
+        P-Manager
       </Link>
 
       {token ? (
         <div className="nav-user">
-          <div className="avatar">
+          <div className="avatar" onClick={() => navigate("/profile")}>
             {user?.name?.charAt(0).toUpperCase() || "U"}
           </div>
 
