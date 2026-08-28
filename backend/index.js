@@ -14,7 +14,8 @@ const app = express();
 connectDB();
 app.use(
   cors({
-    origin: "https://p-managercart.netlify.app/",
+     origin: "http://localhost:5173",
+    origin: "https://p-managercart.netlify.app/"
   })
 );
 
