@@ -12,7 +12,7 @@ const Navbar = () => {
 
     navigate("/login");
   };
-
+   
   return (
     <header className="navbar">
       <Link to="/" className="logo">

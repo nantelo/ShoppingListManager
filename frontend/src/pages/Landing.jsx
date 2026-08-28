@@ -5,19 +5,19 @@ const Landing = () => {
     <main className="landing">
       <div className="landing-background-circle circle-one"></div>
       <div className="landing-background-circle circle-two"></div>
-
+        
       <section className="landing-content">
         <div className="landing-badge">
           ✨ Simple shopping. Better planning.
         </div>
 
         <h1>
-          Grocery shopping,
+          shopping,
           <span> made effortless.</span>
         </h1>
 
         <p>
-          Create smart grocery lists, track quantities,
+          Create smart products lists, track quantities,
           mark items as purchased, and keep your recurring
           shopping organized in one place.
         </p>
@@ -54,7 +54,7 @@ const Landing = () => {
         <div className="preview-header">
           <div>
             <small>THIS WEEK</small>
-            <h3>Weekly Groceries</h3>
+            <h3>Weekly products</h3>
           </div>
 
           <span>🛒</span>
@@ -68,13 +68,13 @@ const Landing = () => {
 
         <div className="preview-item">
           <span className="preview-circle"></span>
-          <span>Fresh vegetables</span>
-          <small>1 kg</small>
+          <span>Bags</span>
+          <small>2 pcs</small>
         </div>
 
         <div className="preview-item">
           <span className="preview-circle"></span>
-          <span>Brown bread</span>
+          <span>Brown cosmetic</span>
           <small>2 pcs</small>
         </div>
 
